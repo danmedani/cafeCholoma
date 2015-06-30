@@ -100,6 +100,19 @@ angular.module('articles').config(['$stateProvider',
 
 'use strict';
 
+angular.module('aboot').config(['$stateProvider',
+	function($stateProvider) {
+		// Articles state routing
+		$stateProvider.
+		state('aboot', {
+			url: '/aboot',
+			templateUrl: 'modules/articles/views/aboot.client.view.html'
+		}).
+	}
+]);
+
+'use strict';
+
 angular.module('articles').controller('ArticlesController', ['$window', '$scope', '$stateParams', '$location', '$animate', '$timeout', 'Authentication', 'Articles', 'Comments',
 	function($window, $scope, $stateParams, $location, $animate, $timeout, Authentication, Articles, Comments) {
 		$scope.authentication = Authentication;
@@ -396,6 +409,14 @@ angular.module('boardroom').config(['$stateProvider',
 
 
 angular.module('boardroom').controller('BoardroomController', ['$scope', 'Authentication',
+	function($scope, Authentication) {
+		// This provides Authentication context.
+		$scope.authentication = Authentication;
+	}
+]);
+'use strict';
+
+angular.module('aboot').controller('AbootController', ['$scope', 'Authentication',
 	function($scope, Authentication) {
 		// This provides Authentication context.
 		$scope.authentication = Authentication;

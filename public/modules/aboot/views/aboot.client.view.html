@@ -1,0 +1,24 @@
+<section data-ng-controller="AbootController">
+	<div class="jumbotron text-center">
+		<div class="row">
+			<div class="col-md-6 col-md-offset-3 col-sm-6 col-sm-offset-3 col-xs-12">
+				{{abootStuff}}
+				<!-- <div ng-show="createVisible" class="article-container" > -->
+					<form name="abootForm" data-ng-submit="create()" novalidate>
+						<fieldset>
+
+								<input name="title" type="text" data-ng-model="title" id="title" class="post-title-entry" ng-class="userSelectedColor" placeholder="Choose a title" required>
+								<textarea placeholder="Type here!" name="content" data-ng-model="content" id="content" class="post-entry"></textarea>
+
+							<input type="submit" style="display:block" value="Post it!" class="myButton post">
+							<span data-ng-show="error" class="text-danger">
+								<strong data-ng-bind="error"></strong>
+							</span>
+						</fieldset>
+					</form>
+				<!-- </div> -->
+			</div>
+		</div>
+		<br>
+	</div>
+</section>
