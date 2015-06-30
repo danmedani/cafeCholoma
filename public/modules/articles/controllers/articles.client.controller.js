@@ -57,7 +57,6 @@ angular.module('articles').controller('ArticlesController', ['$scope', '$statePa
 			$scope.simpleUI = !$scope.simpleUI;
 		};
 
-
 		$scope.create = function() {
 			var article = new Articles({
 				title: this.title,

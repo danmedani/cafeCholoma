@@ -7,7 +7,7 @@ angular.module('aboot').controller('AbootController', ['$scope', 'Authentication
 		$scope.authentication = Authentication;
 
 		$scope.abootStuff = 'Cafe Honduras is all about selling coffee to you and making money to give to the Honduran people to use for medicalizing their wounds.Cafe Honduras is all about selling coffee to you and making money to give to the Honduran people to use for medicalizing their wounds.';
-		
+
 		// $scope.find = function() {
 		// 	// $scope.articles = Aboot.list();
 		// };
@@ -17,6 +17,7 @@ angular.module('aboot').controller('AbootController', ['$scope', 'Authentication
 		// 		title: this.title,
 		// 		content: this.content
 		// 	});
+		// };
 
 		// 	aboot.parent = 'top'; //by default the articles list only shows where parent = 'top'
 		// 	aboot.user = this.user;

@@ -33,7 +33,6 @@ angular.module('articles')
 	}
 ]);
 
-
 //Comments service used for communicating with the articles REST endpoints
 angular.module('articles')
 	.factory('Comments', //the name of the resource Class
