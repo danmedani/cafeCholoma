@@ -6,7 +6,6 @@
 var users = require('../../app/controllers/users.server.controller');
 var articles = require('../../app/controllers/articles.server.controller');
 var cp_api = require('../../app/controllers/cp_api.server.controller');
-var aboot = require('../../app/controllers/aboot.server.controller');
 
 module.exports = function(app) {
 	// Article Routes
@@ -28,10 +27,6 @@ module.exports = function(app) {
 			users.settle_kismet,
 			users.send_kismet,
 			articles.kismet);
-
-	app.route('/aboot')
-		.get(aboot.list)
-		.post(users.requiresLogin, aboot.create);
 
 	// Finish by binding the article middleware
 	app.param('articleId', articles.articleByID);

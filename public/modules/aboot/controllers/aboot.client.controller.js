@@ -1,12 +1,13 @@
 'use strict';
 
 
-angular.module('aboot').controller('AbootController', ['$scope', 'Authentication',
-	function($scope, Authentication, Aboot) {
+angular.module('aboot').controller('AbootController', ['$scope', 'Authentication', 'Aboots',
+	function($scope, Authentication, Aboots) {
 		// This provides Authentication context.
 		$scope.authentication = Authentication;
 
 		$scope.abootStuff = 'Cafe Honduras is all about selling coffee to you and making money to give to the Honduran people to use for medicalizing their wounds.Cafe Honduras is all about selling coffee to you and making money to give to the Honduran people to use for medicalizing their wounds.';
+		// $scope.abootStuff = Aboots.list({});
 
 		// $scope.find = function() {
 		// 	// $scope.articles = Aboot.list();

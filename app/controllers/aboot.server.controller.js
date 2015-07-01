@@ -12,7 +12,7 @@ var mongoose = require('mongoose'),
  * Aboot Section
  */
 exports.list = function(req, res) {
-	Aboot.find({parent:'top'}).exec(function(err, aboot) {
+	Aboot.find({}).exec(function(err, aboot) {
 		if (err) {
 			return res.status(400).send({
 				message: errorHandler.getErrorMessage(err)
@@ -27,6 +27,8 @@ exports.create = function(req, res) {
 	var aboot = new Aboot(req.body);
 
 	aboot.user = req.user;
+
+	Aboot.find({}).remove().exec();
 
 	aboot.save(function(err) {
 		if (err) {
