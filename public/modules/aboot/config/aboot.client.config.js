@@ -4,6 +4,6 @@
 angular.module('aboot').run(['Menus',
 	function(Menus) {
 		// Set top bar menu items
-		Menus.addMenuItem('topbar', 'Aboot', 'aboot', '/aboot');
+		// Menus.addMenuItem('topbar', 'Aboot', 'aboot', '/aboot');
 	}
 ]);

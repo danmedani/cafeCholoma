@@ -6,8 +6,15 @@
 			<span class="icon-bar"></span>
 			<span class="icon-bar"></span>
 		</button>
-		<a href="/#!/" class="navbar-brand">Café Choloma</a>
-		<a href="/#!/about" class="navbar-brand">About</a>
+		<table class="link-table">
+			<tr>
+				<td><a href="/#!/" class="navbar-brand">choloma</a></td>
+				<td><a href="/#!/whatWeDo" class="navbar-brand">what we do</a></td>
+				<td><a href="/#!/coffee" class="navbar-brand">buy coffee</a></td>
+				<td><a href="/#!/blog" class="navbar-brand">blog</a></td>
+				<td><a href="/#!/about" class="navbar-brand">about us</a></td>
+			</tr>
+		</table>
 	</div>
 	<nav class="collapse navbar-collapse" collapse="!isCollapsed" role="navigation">
 		<ul class="nav navbar-nav" data-ng-if="menu.shouldRender(authentication.user);">

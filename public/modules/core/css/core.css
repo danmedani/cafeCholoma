@@ -13,3 +13,6 @@
 .ng-valid.ng-dirty {
 	border-color: #78FA89;
 }
+.link-table td {
+	padding-right: 35px;
+}
